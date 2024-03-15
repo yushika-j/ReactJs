@@ -1,6 +1,6 @@
 import React from 'react'
 import './ImageGenerator.css'
-import default_image from '../assets/image-ai.jpeg'
+import default_image from './assets/image-ai.jpeg'
 
 
 const ImageGenerator = () => {
@@ -10,7 +10,7 @@ const ImageGenerator = () => {
                 AI image <span>generator</span>
             </div>
             <div className="img-loading">
-                <img src={default_image} alt='default_image' />
+                <div className="image"><img src={default_image} alt='default_image' /></div>
             </div>
         </div>
     )
