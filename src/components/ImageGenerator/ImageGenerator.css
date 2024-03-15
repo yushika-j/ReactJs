@@ -32,3 +32,29 @@
     border-radius: 50px;
     background: #1f3540;
 }
+
+.search-input{
+    width: 600px;
+    height:50px;
+    background: transparent;
+    border:none;
+    outline:none;
+    font-size: 18px;
+    color: white;
+    padding-left:35px;
+    margin-right:35px;
+}
+
+.search-input::placeholder{
+    color: #999;
+}
+
+.generate-btn{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    width:300px;
+    height: 85px;
+    font-size: 20px;
+    border-radius: 50px;
+}
