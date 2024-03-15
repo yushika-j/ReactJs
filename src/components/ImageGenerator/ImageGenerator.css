@@ -1,4 +1,4 @@
-ai-image-generator{
+.ai-image-generator{
     display:flex;
     flex-direction:column;
     margin: auto;
@@ -6,4 +6,29 @@ ai-image-generator{
     margin-top:80px;
     margin-bottom: 20px;
     gap: 30px;
+}
+
+.header{
+    font-size: 70px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.header span{
+    color: #de1889;
+    font-weight:600;
+}
+
+.img-loading img{
+    width:512px;
+}
+
+.search-box{
+    display:flex;
+    width: 1000px;
+    height:95px;
+    justify-content: space-around;
+    align-items:center;
+    border-radius: 50px;
+    background: #1f3540;
 }
