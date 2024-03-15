@@ -1,6 +1,6 @@
 import React from 'react'
 import './ImageGenerator.css'
-import default_image from './assets/image-ai.jpeg'
+import default_image from './assets/default_image.jpeg'
 
 
 const ImageGenerator = () => {
