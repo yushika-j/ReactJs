@@ -57,4 +57,7 @@
     height: 85px;
     font-size: 20px;
     border-radius: 50px;
+    background: #de1889;
+    cursor: pointer;
+    
 }
