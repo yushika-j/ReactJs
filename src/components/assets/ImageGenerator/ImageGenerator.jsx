@@ -5,9 +5,12 @@ import default_image from '../assets/image-ai.jpeg'
 
 const ImageGenerator = () => {
     return (
-        <div class= 'ai-img-generator'>
-            <div class='header'>
+        <div className= "ai-img-generator">
+            <div className='header'>
                 AI image <span>generator</span>
+            </div>
+            <div className="img-loading">
+                <img src={default_image} alt='default_image' />
             </div>
         </div>
     )
