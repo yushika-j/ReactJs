@@ -1,6 +1,6 @@
 ai-image-generator{
     display:flex;
-    flex-directions:column;
+    flex-direction:column;
     margin: auto;
     align-items: center;
     margin-top:80px;
