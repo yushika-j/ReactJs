@@ -1,14 +1,22 @@
+
+body{
+    background: linear-gradient(to bottom left, #020258, #26527e, #2d96ca, #0d3e6e, #abc7ff);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
 .ai-image-generator{
-    display:flex;
-    flex-direction:column;
-    margin: auto;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    margin-top:80px;
+    margin: auto;
+    margin-top: 80px;
     margin-bottom: 20px;
     gap: 30px;
 }
 
 .header{
+    align-items: center;
     font-size: 70px;
     font-weight: 500;
     padding-bottom: 30px;
@@ -18,17 +26,22 @@
     color: #de1889;
     font-weight:600;
 }
-
+.img-loading{
+    
+    justify-content: center;
+}
 .img-loading img{
-    width:512px;
+    width: 512px;
+    max-width: 100%;
+    height: auto;
 }
 
 .search-box{
-    display:flex;
+    display:inline-block;
     width: 1000px;
-    height:95px;
+    height:80px;
     justify-content: space-around;
-    align-items:center;
+    align-items: center;
     border-radius: 50px;
     background: #1f3540;
 }

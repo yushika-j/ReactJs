@@ -9,7 +9,7 @@ const ImageGenerator = () => {
     let inputRef = useRef(null);
     const[loading,setLoading] = useState(false);
 
-    const ImageGenerator = async async => {
+    const ImageGenerator = async () => {
         if(inputRef.current.value===""){
             return 0;
         }
@@ -33,13 +33,11 @@ const ImageGenerator = () => {
                 }
             );
             let data = await response.json();
-            let data_array = data.data;
-            if (data && data.data && data.data.length > 0) {
-                const imageUrl = data.data[0].url;
-                setImage_url(imageUrl);
+            if (data.data && data.data[0]) {
+                let data_array = data.data;
+                setImage_url(data_array[0].url);
             } else {
-                console.error("Invalid data format:", data);
-                alert("Failed to generate image. Please try again later.");
+                console.error('Data is undefined or does not have a 0 property');
             }
             setLoading(false);
     }
@@ -56,8 +54,8 @@ const ImageGenerator = () => {
                     <div className={loading?"loading-text":"display-none"}>Loading....</div>
                 </div>
             </div>
-            <div className= "searchBox">
-                <input type="text" ref={inputRef} placeholder="Describe what you want to see" />
+            <div className= "search-box">
+                <input class= "search-input" type="text" ref={inputRef} placeholder="Describe what you want to see" />
                 <div className="generate-btn" onClick={()=>(ImageGenerator())}>Generate</div>
             </div>
         </div>
