@@ -12,7 +12,7 @@ const ImageGenerator = () => {
         if(inputRef.current.value===""){
             return 0;
         }
-        const response = await fetch();
+        //const response = await fetch();
 
     return (
         <div className= "ai-img-generator">
