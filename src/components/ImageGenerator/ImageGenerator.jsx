@@ -12,7 +12,25 @@ const ImageGenerator = () => {
         if(inputRef.current.value===""){
             return 0;
         }
-        //const response = await fetch();
+        const response = await fetch(
+            "https://api.openai.com/v1/images/generations",
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Authorization:
+                    "Bearer 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",
+                    "User-Agent": "Chrome",
+                },
+                body:JSON.stringify(
+                    {
+                        prompt: inputRef.current.value,
+                        n:1,
+                        size: "512x512",
+                    })
+                }
+            );
+    }
 
     return (
         <div className= "ai-img-generator">
